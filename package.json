@@ -4,7 +4,8 @@
   "description": "",
   "main": "bstart.js",
   "scripts": {
-    "start": "nodemon bstart.js"
+    "start": "node bstart.js",
+    "start-dev": "nodemon bstart.js"
   },
   "author": "japeter89",
   "license": "ISC",
