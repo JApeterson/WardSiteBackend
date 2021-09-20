@@ -22,7 +22,10 @@ router.get('/:id', async (req, res) => {
 })
 router.post('/', async (req, res) => {
     const cleaner = new Cleaner({
-        name: req.body.name
+        name: req.body.name,
+        notificationType: req.body.notificationType,
+        email: req.body.email,
+        phoneNumber: req.body.phoneNumber
     })
     try {
         const saveCleaner = await cleaner.save()
